@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     tools {
-        gradle 'VishwasGradle'
+        gradle 'Gradle'
         jdk 'JDK'
     }
 
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'master', url: 'https://github.com/vishwaspw/mygradle.git'
+                git branch: 'master', url: 'https://github.com/Pranav0830/MyGradleApp.git'
             }
         }
 
